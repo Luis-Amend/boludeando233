@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dea</title>
 </head>
 
@@ -13,20 +13,54 @@
     <h1>primeros cambios en git</h1>
     <h1>aqui solo hablamos de manteca</h1>
 
-    <img src="/img/mantemayo.png" alt="Mantemayo" width="500" height="600">
-    <hr>
+    <img src="/img/mantemayo.png" alt="Mantemayo" width="500" height="600" />
+    <hr />
 
     <h2>Formulario</h2>
     <h3>consumes manteca con mayonesa cada tanto ?</h3>
     <form action="/enviardatos" method="post">
-
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre" required name="nombre">
-        
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" placeholder="Escribe tu apellido" required name="apellido">
-        <button type="submit">Enviar</button>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" required name="nombre" />
 
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" placeholder="Escribe tu apellido" required name="apellido" />
+
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="Email" placeholder="Coloaque su Email" required />
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="18" max="100" required />
+
+        <hr>
+        
+        <label for="Preferencias">Experiencia:</label>
+        
+        <input type="radio" name="Nivel" id="Principiante" value="Principiante">Principiante
+        <label for="Principiante"></label>
+
+        <input type="radio" name="Nivel" id="Intermedio" value="Intermedio">Intermedio
+        <label for="Intermedio"></label>
+
+        <input type="radio" name="Nivel" id="Avanzado" value="Avanzado">Avanzado
+        <label for="Avanzado"></label>
+
+        <hr>
+
+        <label for="Lenguaje">Lenguaje:</label>
+        <select name="Lenguaje" id="Lenguaje" required>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="REACT">REACT</option>
+            <option value="ANGULAR">ANGULAR</option>
+        </select>
+
+        <hr>
+
+        <label for="Comentario">Explicacion:</label>
+        <textarea name="Explicacion" id="Explicacion" placeholder="Explique por qué quiere participar"></textarea>
+
+        <button type="submit">Enviar</button>
     </form>
 
     <footer>
