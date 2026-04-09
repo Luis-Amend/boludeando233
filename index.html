@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dea</title>
 </head>
 
@@ -18,11 +19,14 @@
     <h2>Formulario</h2>
     <h3>consumes manteca con mayonesa cada tanto ?</h3>
     <form action="/enviardatos" method="post">
+
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" placeholder="Escribe tu nombre" required name="nombre">
+        
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" placeholder="Escribe tu apellido" required>
+        <input type="text" id="apellido" placeholder="Escribe tu apellido" required name="apellido">
         <button type="submit">Enviar</button>
+
     </form>
 
     <footer>
